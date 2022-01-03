@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class YahooStockService {
-  private api = 'https://api.polygon.io/v1/open-close/{0}/{date}?adjusted=true&apiKey=lEPTgeVLVfprrVSy8URUtYQoO9G8c_by'
+  private api = 'https://api.polygon.io/v1/open-close/{0}/{date}?adjusted=true&apiKey=YourAPIKEY'
   constructor(private httpClient: HttpClient) {}
 
   public getStockInformation(ticker: string, date: string) {
