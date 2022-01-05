@@ -45,4 +45,8 @@ export class HomeScreenComponent implements OnInit {
     const formattedDate = moment(momentDate).format("YYYY-MM-DD");
     return formattedDate;
   }
+
+  clearResults() {
+    this.stocks = [];
+  }
 }

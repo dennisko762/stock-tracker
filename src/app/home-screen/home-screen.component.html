@@ -10,6 +10,7 @@
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
     <button type="submit" class="btn btn-primary">Search</button>
+    <button type="button" class="btn btn-danger" (click)="clearResults()">Clear results</button>
 </form>
 <hr>
 <table mat-table *ngIf="stocks.length > 0 " [dataSource]="stocks" class="mat-elevation-z8">
