@@ -1,4 +1,4 @@
-import { YahooStockService } from '../services/stock.service';
+import { StockService } from '../services/stock.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import * as moment from 'moment';
@@ -21,7 +21,7 @@ export class HomeScreenComponent implements OnInit {
   stockId;
   stocks = [];
 
-  constructor(private stockService: YahooStockService) {}
+  constructor(private stockService: StockService) {}
 
   ngOnInit(): void {
     this.stockId = new FormGroup({

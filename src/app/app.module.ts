@@ -1,4 +1,4 @@
-import { YahooStockService } from './services/stock.service';
+import { StockService } from './services/stock.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -35,7 +35,7 @@ import { MY_DATE_FORMATS } from './utils/DateFormat';
     MatInputModule
 
   ],
-  providers: [YahooStockService, { provide: MAT_DATE_FORMATS, useValue: MY_DATE_FORMATS }],
+  providers: [StockService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
