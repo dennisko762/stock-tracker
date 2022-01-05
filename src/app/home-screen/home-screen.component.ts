@@ -1,4 +1,4 @@
-import { YahooStockService } from '../services/yahoo-stock.service';
+import { YahooStockService } from '../services/stock.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import * as moment from 'moment';
