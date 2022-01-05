@@ -9,12 +9,6 @@ import * as moment from 'moment';
   styleUrls: ['./home-screen.component.scss'],
 })
 export class HomeScreenComponent implements OnInit {
-  myShares = [
-    { id: 'TSLA', name: 'Tesla, Inc.' },
-    { id: 'PINS', name: 'Pinterest, Inc.' },
-    { id: 'MRNA', name: 'Moderna, Inc.' },
-  ];
-
   displayedColumns: string[] = ['symbol', 'open', 'close'];
 
   date: string;
