@@ -1,4 +1,4 @@
-import { YahooStockService } from './yahoo-stock.service';
+import { YahooStockService } from './services/yahoo-stock.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
